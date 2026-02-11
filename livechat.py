@@ -1,9 +1,10 @@
+import eventlet
+eventlet.monkey_patch()
 from flask import Flask, render_template, request, session, redirect, url_for, flash, g
 from flask_socketio import join_room, send, SocketIO
 import random
 import json
 import os
-import eventlet
 from string import ascii_uppercase
 from huggingface_hub import InferenceClient
 import sqlite3
@@ -270,5 +271,4 @@ def connect(auth):
 
 #Här vi startar hela appen/webbsida med eventlet som asynkront körsystem
 if __name__ == "__main__":
-    eventlet.monkey_patch()
     socketio.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
