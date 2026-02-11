@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om oss</title>
+    <title>About us</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mycss.css') }}"/>
 </head>
@@ -11,16 +11,16 @@
     <nav class="navigation">
         <h1>Livechat</h1>
         <div class="menu">
-            <a href="{{ url_for('index') }}">Introduktion</a>
+            <a href="{{ url_for('index') }}">Introduction</a>
             <a href="{{ url_for('livechatt') }}">Livechat</a>
-            <a href="{{ url_for('om_oss') }}">Om oss</a>
+            <a href="{{ url_for('om_oss') }}">About us</a>
         </div>
-        <a href="{{ url_for('logout') }}" class="navigation-button">Logga ut</a>
+        <a href="{{ url_for('logout') }}" class="navigation-button">Log out</a>
     </nav>
     
     <section class="kropp-mitten">
-        <h2>Om Oss</h2>
-        <p>Vi är ett team på två: Myar och Hamid. Vi studerar DataTeknik och Nätverksteknik vid Högskolan Väst i Trollhättan och delar en gemensam passion för teknik och digital kommunikation. Vår idé med den här hemsidan föddes ur en önskan att skapa en plats där människor enkelt kan ställa frågor och diskutera kring och få svar direkt från andra människor inom olika ämnen. Vi tror att kunskapsutbyte och öppen dialog är nyckeln till både personlig utveckling och teknisk innovation. Genom att kombinera våra studier med våra egna erfarenheter vill vi erbjuda en pålitlig plattform där allt från teknikrelaterade frågor till vardagsproblem kan diskuteras i en interaktiv miljö. Vår vision är att inspirera och underlätta för alla att lära sig mer. Vi är stolta över att kunna bidra med vår kompetens och ser fram emot att tillsammans med dig skapa en levande community där varje fråga leder till nya insikter och möjligheter.</p>
+        <h2>About Us</h2>
+        <p>We are a team of two: Myar and Hamid. We study Computer Engineering and Network Engineering at University West in Trollhättan and share a common passion for technology and digital communication. The idea for this website was born from a desire to create a place where people can easily ask questions, discuss different topics, and get answers directly from other people in various areas. We believe that knowledge sharing and open dialogue are the key to both personal development and technical innovation. By combining our studies with our own experiences, we want to offer a reliable platform where everything from technology-related questions to everyday problems can be discussed in an interactive environment. Our vision is to inspire and make it easier for everyone to learn more. We are proud to contribute our expertise and look forward to building a vibrant community with you, where every question leads to new insights and opportunities.</p>
     </section>
 </body>
 
