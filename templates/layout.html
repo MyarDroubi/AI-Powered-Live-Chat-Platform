@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +23,11 @@
     <nav class="navigation">
         <h1>Livechat</h1>
         <div class="menu">
-            <a href="{{ url_for('index') }}">Introduktion</a>
+            <a href="{{ url_for('index') }}">Introduction</a>
             <a href="{{ url_for('livechatt') }}">Livechat</a>
-            <a href="{{ url_for('om_oss') }}">Om oss</a>
+            <a href="{{ url_for('om_oss') }}">About us</a>
         </div>
-        <a href="{{ url_for('logout') }}" class="navigation-button">Logga ut</a>
+        <a href="{{ url_for('logout') }}" class="navigation-button">Log out</a>
     </nav>
     {% endif %}
 
