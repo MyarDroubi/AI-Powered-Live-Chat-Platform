@@ -1,2 +1,2 @@
-web: gunicorn -k eventlet -w 1 livechat:app
+web: gunicorn -k eventlet -w 1 --bind 0.0.0.0:$PORT livechat:app
   
